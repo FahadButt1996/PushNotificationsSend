@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="5"
+    tools:context="com.ttl.pushnotificationsend.SendNotification">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Notification" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColorHint="#b4a5a5"
+        android:layout_weight=".4">
+
+        <EditText
+            android:id="@+id/notification_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/login_text"
+            android:hint="Title"
+            android:text="notification_testing"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColorHint="#b4a5a5"
+        android:layout_weight=".4">
+
+        <EditText
+            android:id="@+id/notification_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/login_text"
+            android:hint="Body"
+            android:text="notification_body"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Body" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColorHint="#b4a5a5"
+        android:layout_weight=".4">
+
+        <EditText
+            android:id="@+id/data_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/login_text"
+            android:hint="Title"
+            android:text="data_testing"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColorHint="#b4a5a5"
+        android:layout_weight=".4">
+
+        <EditText
+            android:id="@+id/data_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/login_text"
+            android:text="data_testing"
+            android:hint="Body"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/send_notification"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Send notification" />
+
+</LinearLayout>
